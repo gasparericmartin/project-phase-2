@@ -1,20 +1,20 @@
 import {useState, useEffect} from 'react'
 
 function App() {
-  const [fighterList, setFighterList] = useState([])
+  const [workoutList, setWorkoutList] = useState([])
   
   useEffect(() => {
-    fetch('http://localhost:3001/fighters')
+    fetch('http://localhost:3001/workouts')
     .then(r => r.json())
-    .then(data => setFighterList(data))
+    .then(data => setWorkoutList(data))
   }, [])
   
   
   return (
     <>
     <h1>Here I am</h1>
-    {fighterList.map((fighter) => {
-      return <p key={fighter.id}>{fighter.name}</p>
+    {workoutList.map((workout) => {
+      return <p key={workout.id}>{workout.type}</p>
     })}
     </>
   );
