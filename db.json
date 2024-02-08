@@ -17,6 +17,12 @@
             "name": "Dustin Poirier",
             "nickname": "The Diamond",
             "from": "Louisiana"
+        },
+        {
+            "id": 4,
+            "name": "Tony Ferguson",
+            "nickname": "El Cucuy",
+            "from": "California"
         }
     ]
 }
