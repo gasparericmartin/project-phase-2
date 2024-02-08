@@ -1,22 +1,28 @@
 {
-    "fighters": [
+    "workouts": [
         {
             "id": 1,
-            "name": "Max Holloway",
-            "nickname": "Blessed",
-            "from": "Hawaii"
+            "type": "Run",
+            "length": 30,
+            "location": "Prospect Park",
+            "notes": "Difficult run",
+            "imgUrl": ""
         },
         {
             "id": 2,
-            "name": "Daniel Cormier",
-            "nickname": "DC",
-            "from": "Louisiana"
+            "type": "Muay Thai",
+            "length": 60,
+            "location": "Gym",
+            "notes": "Hit pads with coach",
+            "imgUrl": ""
         },
         {
             "id": 3,
-            "name": "Dustin Poirier",
-            "nickname": "The Diamond",
-            "from": "Louisiana"
+            "type": "Rock Climbing",
+            "length": 90,
+            "location": "Gym",
+            "notes": "Sent a v4!",
+            "imgUrl": ""
         }
     ]
 }
