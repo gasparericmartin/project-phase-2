@@ -1,23 +1,16 @@
 import {useState, useEffect} from 'react'
+import { Outlet } from 'react-router-dom'
+import NavBar from './components/NavBar'
 
 function App() {
-  const [workoutList, setWorkoutList] = useState([])
-  
-  useEffect(() => {
-    fetch('http://localhost:3001/workouts')
-    .then(r => r.json())
-    .then(data => setWorkoutList(data))
-  }, [])
-  
-  
-  return (
+  return(
     <>
-    <h1>Here I am</h1>
-    {workoutList.map((workout) => {
-      return <p key={workout.id}>{workout.type}</p>
-    })}
+      <header>
+        <NavBar />
+      </header>
+      <Outlet />
     </>
-  );
+  )
 }
 
 export default App;
