@@ -1,4 +1,5 @@
 import { useState, useEffect} from 'react'
+import WorkoutCard from '../components/WorkoutCard'
 
 function Workouts() {
     const [workoutList, setWorkoutList] = useState([])
@@ -14,7 +15,7 @@ function Workouts() {
       <>
       <h1>Here I am</h1>
       {workoutList.map((workout) => {
-        return <p key={workout.id}>{workout.type}</p>
+        return <WorkoutCard key={workout.id} workout={workout} />
       })}
       </>
     );
