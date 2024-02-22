@@ -1,6 +1,7 @@
 import { useState, useEffect} from 'react'
 import WorkoutCard from '../components/WorkoutCard'
 
+
 function Workouts() {
     const [workoutList, setWorkoutList] = useState([])
   

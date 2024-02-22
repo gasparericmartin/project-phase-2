@@ -1,4 +1,4 @@
-
+import './WorkoutCard.css'
 
 function WorkoutCard({workout}) {
     const {id, type, length, location, notes, imgUrl} = workout
