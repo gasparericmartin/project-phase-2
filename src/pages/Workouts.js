@@ -14,7 +14,7 @@ function Workouts() {
     
     return (
       <>
-      <h1>Here I am</h1>
+      <h1>Your Workouts</h1>
       {workoutList.map((workout) => {
         return <WorkoutCard key={workout.id} workout={workout} />
       })}
