@@ -6,6 +6,7 @@ import './Workouts.css'
 
 function Workouts() {
     const [workoutList, setWorkoutList] = useState([])
+    const [showAddForm, setShowAddForm] = useState(false)
   
     useEffect(() => {
       fetch('http://localhost:3001/workouts')
@@ -24,17 +25,23 @@ function Workouts() {
       .then(r => r.json())
       .then(data => setWorkoutList([...workoutList, data]))
     }
+
+    function handleClick() {
+      setShowAddForm(!showAddForm)
+    }
     
     
     return (
       <>
       <h1>Your Workouts</h1>
-      <button className='button'>Add Workout</button>
+      <button className='button' onClick={handleClick}>Add Workout</button>
+      
+      {showAddForm ? <AddWorkout postWorkout={postWorkout}/> : null}
       
       {workoutList.map((workout) => {
         return <WorkoutCard key={workout.id} workout={workout} />
       })}
-      <AddWorkout postWorkout={postWorkout}/>
+      
       </>
     );
 }
