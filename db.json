@@ -1,28 +1,36 @@
 {
-    "workouts": [
-        {
-            "id": 1,
-            "type": "Run",
-            "length": 30,
-            "location": "Prospect Park",
-            "notes": "Difficult run",
-            "imgUrl": ""
-        },
-        {
-            "id": 2,
-            "type": "Muay Thai",
-            "length": 60,
-            "location": "Gym",
-            "notes": "Hit pads with coach",
-            "imgUrl": ""
-        },
-        {
-            "id": 3,
-            "type": "Rock Climbing",
-            "length": 90,
-            "location": "Gym",
-            "notes": "Sent a v4!",
-            "imgUrl": ""
-        }
-    ]
+  "workouts": [
+    {
+      "id": 1,
+      "type": "Run",
+      "length": 30,
+      "location": "Prospect Park",
+      "notes": "Difficult run",
+      "imgUrl": ""
+    },
+    {
+      "id": 2,
+      "type": "Muay Thai",
+      "length": 60,
+      "location": "Gym",
+      "notes": "Hit pads with coach",
+      "imgUrl": ""
+    },
+    {
+      "id": 3,
+      "type": "Rock Climbing",
+      "length": 90,
+      "location": "Gym",
+      "notes": "Sent a v4!",
+      "imgUrl": ""
+    },
+    {
+      "id": 4,
+      "type": "Run",
+      "length": "5",
+      "location": "atlanta, ga",
+      "notes": "Test 1",
+      "imgUrl": ""
+    }
+  ]
 }

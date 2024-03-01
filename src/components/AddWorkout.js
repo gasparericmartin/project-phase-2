@@ -1,9 +1,8 @@
 import {useState} from 'react'
 import './AddWorkout.css'
 
-function AddWorkout() {
+function AddWorkout({postWorkout}) {
     const [formData, setFormData] = useState({
-                                    id: '',
                                     type: '',
                                     length: '',
                                     location: '',
@@ -17,7 +16,17 @@ function AddWorkout() {
 
     function handleSubmit(e) {
         e.preventDefault()
-        console.log(formData)
+        
+        const postObj = {
+                        id: '',
+                        type: formData.type,
+                        length: formData.length,
+                        location: formData.location,
+                        notes: formData.notes,
+                        imgUrl: formData.imgUrl
+        }
+        
+        postWorkout(postObj)
     }
     
 

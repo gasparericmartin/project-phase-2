@@ -11,15 +11,28 @@ function Workouts() {
       .then(r => r.json())
       .then(data => setWorkoutList(data))
     }, [])
+
+    function postWorkout(postObj) {
+      fetch('http://localhost:3001/workouts', {
+        method: 'POST',
+        headers: {
+          'content-type': 'application/json'
+        },
+        body: JSON.stringify(postObj)
+      })
+      .then(r => r.json())
+      .then(data => setWorkoutList([...workoutList, data]))
+    }
     
     
     return (
       <>
-      <h1>Your Workouts</h1>
+      <h1>Your Workouts</h1><button>Add Workout</button>
+      
       {workoutList.map((workout) => {
         return <WorkoutCard key={workout.id} workout={workout} />
       })}
-      <AddWorkout />
+      <AddWorkout postWorkout={postWorkout}/>
       </>
     );
 }
