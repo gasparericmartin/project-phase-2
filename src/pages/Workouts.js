@@ -1,5 +1,6 @@
 import { useState, useEffect} from 'react'
 import WorkoutCard from '../components/WorkoutCard'
+import AddWorkout from '../components/AddWorkout'
 
 
 function Workouts() {
@@ -18,6 +19,7 @@ function Workouts() {
       {workoutList.map((workout) => {
         return <WorkoutCard key={workout.id} workout={workout} />
       })}
+      <AddWorkout />
       </>
     );
 }
