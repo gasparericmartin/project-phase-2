@@ -8,7 +8,7 @@ function AddWorkout() {
                                     length: '',
                                     location: '',
                                     notes: '',
-                                    ingUrl: ''
+                                    imgUrl: ''
     })
 
     function handleChange(e) {
@@ -47,6 +47,20 @@ function AddWorkout() {
                     placeholder='Location'
                     value={formData.name}
                     name='location'
+                    onChange={handleChange}
+                />
+                <input 
+                    type='text'
+                    placeholder='Notes'
+                    value={formData.name}
+                    name='notes'
+                    onChange={handleChange}
+                />
+                <input 
+                    type='url'
+                    placeholder='Image'
+                    value={formData.name}
+                    name='imgUrl'
                     onChange={handleChange}
                 />
                 
