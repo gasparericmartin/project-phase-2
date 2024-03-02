@@ -7,7 +7,8 @@ function AddWorkout({postWorkout}) {
                                     length: '',
                                     location: '',
                                     notes: '',
-                                    imgUrl: ''
+                                    imgUrl: '',
+                                    date: ''
     })
 
     function handleChange(e) {
@@ -19,6 +20,7 @@ function AddWorkout({postWorkout}) {
         
         const postObj = {
                         id: '',
+                        date: formData.date,
                         type: formData.type,
                         length: formData.length,
                         location: formData.location,
@@ -70,6 +72,13 @@ function AddWorkout({postWorkout}) {
                     placeholder='Image'
                     value={formData.name}
                     name='imgUrl'
+                    onChange={handleChange}
+                />
+                <input 
+                    type='date'
+                    placeholder='Date'
+                    value={formData.name}
+                    name='date'
                     onChange={handleChange}
                 />
                 
