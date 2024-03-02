@@ -29,6 +29,11 @@ function Workouts() {
     function handleClick() {
       setShowAddForm(!showAddForm)
     }
+
+    const displayList = workoutList.toSorted((a, b) => {
+      return a.date.replaceAll('-','') - b.date.replaceAll('-','')}
+    )
+
     
     
     return (
@@ -38,7 +43,7 @@ function Workouts() {
       
       {showAddForm ? <AddWorkout postWorkout={postWorkout}/> : null}
       
-      {workoutList.map((workout) => {
+      {displayList.map((workout) => {
         return <WorkoutCard key={workout.id} workout={workout} />
       })}
       
