@@ -3,12 +3,12 @@ import './AddWorkout.css'
 
 function AddWorkout({postWorkout}) {
     const [formData, setFormData] = useState({
+                                    date: '',
                                     type: '',
                                     length: '',
                                     location: '',
                                     notes: '',
-                                    imgUrl: '',
-                                    date: ''
+                                    imgUrl: ''
     })
 
     function handleChange(e) {
