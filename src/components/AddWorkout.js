@@ -66,13 +66,6 @@ function AddWorkout({postWorkout}) {
                     onChange={handleChange}
                 />
                 <input 
-                    type='url'
-                    placeholder='Image'
-                    value={formData.name}
-                    name='imgUrl'
-                    onChange={handleChange}
-                />
-                <input 
                     type='date'
                     placeholder='Date'
                     value={formData.name}
