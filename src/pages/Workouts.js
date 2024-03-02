@@ -1,18 +1,13 @@
 import { useState, useEffect} from 'react'
+import { useOutletContext } from 'react-router-dom'
 import WorkoutCard from '../components/WorkoutCard'
 import AddWorkout from '../components/AddWorkout'
 import './Workouts.css'
 
 
 function Workouts() {
-    const [workoutList, setWorkoutList] = useState([])
-    const [showAddForm, setShowAddForm] = useState(false)
-  
-    useEffect(() => {
-      fetch('http://localhost:3001/workouts')
-      .then(r => r.json())
-      .then(data => setWorkoutList(data))
-    }, [])
+  const [workoutList, setWorkoutList] = useOutletContext()
+  const [showAddForm, setShowAddForm] = useState(false)
 
     function postWorkout(postObj) {
       fetch('http://localhost:3001/workouts', {
