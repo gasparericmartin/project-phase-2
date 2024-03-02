@@ -10,9 +10,7 @@ function WorkoutCard({workout}) {
     }
     
     return (
-        <div 
-            className='card' 
-            onClick={() => console.log(new Date().toDateString())}>
+        <div className='card'>
             <h4>{displayDate.month}/{displayDate.day}/{displayDate.year}</h4>
             <h2>{type}</h2>
             <h3>{length} minutes</h3>
