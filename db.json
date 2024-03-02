@@ -6,8 +6,7 @@
       "type": "Run",
       "length": 30,
       "location": "Prospect Park",
-      "notes": "Difficult run",
-      "imgUrl": ""
+      "notes": "Difficult run"
     },
     {
       "id": 2,
@@ -15,8 +14,7 @@
       "type": "Muay Thai",
       "length": 60,
       "location": "Gym",
-      "notes": "Hit pads with coach",
-      "imgUrl": ""
+      "notes": "Hit pads with coach"
     },
     {
       "id": 3,
@@ -24,8 +22,7 @@
       "type": "Rock Climbing",
       "length": 90,
       "location": "Gym",
-      "notes": "Sent a v4!",
-      "imgUrl": ""
+      "notes": "Sent a v4!"
     },
     {
       "id": 4,
@@ -33,8 +30,7 @@
       "type": "Run",
       "length": "5",
       "location": "atlanta, ga",
-      "notes": "Test 1",
-      "imgUrl": ""
+      "notes": "Test 1"
     },
     {
       "id": 5,
@@ -42,8 +38,7 @@
       "type": "Run",
       "length": "90",
       "location": "peachtree, ga",
-      "notes": "Test 2",
-      "imgUrl": "https://google.com"
+      "notes": "Test 2"
     }
   ]
 }

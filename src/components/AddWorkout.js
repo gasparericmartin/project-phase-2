@@ -8,7 +8,6 @@ function AddWorkout({postWorkout}) {
                                     length: '',
                                     location: '',
                                     notes: '',
-                                    imgUrl: ''
     })
 
     function handleChange(e) {
@@ -25,7 +24,6 @@ function AddWorkout({postWorkout}) {
                         length: formData.length,
                         location: formData.location,
                         notes: formData.notes,
-                        imgUrl: formData.imgUrl
         }
         
         postWorkout(postObj)
