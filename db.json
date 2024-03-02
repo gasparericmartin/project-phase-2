@@ -2,7 +2,7 @@
   "workouts": [
     {
       "id": 1,
-      "date": "2024-02-28",
+      "date": "2024-02-24",
       "type": "Run",
       "length": 30,
       "location": "Prospect Park",
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "date": "2024-02-28",
+      "date": "2024-02-25",
       "type": "Muay Thai",
       "length": 60,
       "location": "Gym",
@@ -18,7 +18,7 @@
     },
     {
       "id": 3,
-      "date": "2024-02-28",
+      "date": "2024-02-26",
       "type": "Rock Climbing",
       "length": 90,
       "location": "Gym",
@@ -26,7 +26,7 @@
     },
     {
       "id": 4,
-      "date": "2024-02-28",
+      "date": "2024-02-27",
       "type": "Run",
       "length": "5",
       "location": "atlanta, ga",
