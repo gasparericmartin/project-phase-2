@@ -15,9 +15,6 @@ function App() {
     const date1 = new Date(a.date.replaceAll('-',', ')).getTime()
     const date2 = new Date(b.date.replaceAll('-',', ')).getTime()
 
-    console.log(date1)
-    console.log(date2)
-
     if (date1 > date2) {
       return -1
     }
@@ -28,8 +25,6 @@ function App() {
       return 0
     }}
   )
-
-  console.log(displayList)
   
   return(
     <>
