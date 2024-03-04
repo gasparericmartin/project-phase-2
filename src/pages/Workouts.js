@@ -4,7 +4,6 @@ import WorkoutCard from '../components/WorkoutCard'
 import AddWorkout from '../components/AddWorkout'
 import './Workouts.css'
 
-
 function Workouts() {
   const {workoutList, setWorkoutList, displayList} = useOutletContext()
   const [showAddForm, setShowAddForm] = useState(false)
@@ -35,7 +34,6 @@ function Workouts() {
       {displayList.map((workout) => {
         return <WorkoutCard key={workout.id} workout={workout} />
       })}
-      
       </>
     );
 }
