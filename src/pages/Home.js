@@ -5,7 +5,7 @@ function Home() {
 
     function daysElapsed() {
         const today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate())
-        const lastWorkout = new Date(displayList.slice(-1)[0].date.replaceAll('-', ','))
+        const lastWorkout = new Date(displayList[0].date.replaceAll('-', ','))
         const daysElapsed = (today - lastWorkout) / (1000 * 60 * 60 * 24)
 
         return daysElapsed
