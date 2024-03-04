@@ -37,7 +37,7 @@ function AddWorkout({postWorkout}) {
                 <input 
                     type='text'
                     placeholder='Type'
-                    value={formData.name}
+                    value={formData.type}
                     name='type'
                     onChange={handleChange}
                 />
@@ -46,7 +46,7 @@ function AddWorkout({postWorkout}) {
                 <input 
                     type='number'
                     placeholder='Length'
-                    value={formData.name}
+                    value={formData.length}
                     name='length'
                     onChange={handleChange}
                 />
@@ -54,21 +54,21 @@ function AddWorkout({postWorkout}) {
                 <input 
                     type='text'
                     placeholder='Location'
-                    value={formData.name}
+                    value={formData.location}
                     name='location'
                     onChange={handleChange}
                 />
                 <input 
                     type='text'
                     placeholder='Notes'
-                    value={formData.name}
+                    value={formData.notes}
                     name='notes'
                     onChange={handleChange}
                 />
                 <input 
                     type='date'
                     placeholder='Date'
-                    value={formData.name}
+                    value={formData.date}
                     name='date'
                     onChange={handleChange}
                 />

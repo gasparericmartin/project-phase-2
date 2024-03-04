@@ -23,13 +23,7 @@ function Workouts() {
 
     function handleClick() {
       setShowAddForm(!showAddForm)
-    }
-
-    // const displayList = workoutList.toSorted((a, b) => {
-    //   return a.date.replaceAll('-','') - b.date.replaceAll('-','')}
-    // )
-
-    
+    }   
     
     return (
       <>

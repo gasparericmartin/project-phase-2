@@ -47,6 +47,14 @@
       "length": "78",
       "location": "gooby ",
       "notes": "Test 3"
+    },
+    {
+      "id": 7,
+      "date": "2024-01-20",
+      "type": "Rock Climbing",
+      "length": "20",
+      "location": "Movement Gowanus",
+      "notes": "High gravity day"
     }
   ]
 }
