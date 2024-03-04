@@ -1,7 +1,7 @@
 import './WorkoutCard.css'
 
 function WorkoutCard({workout}) {
-    const {id, date, type, length, location, notes, imgUrl} = workout
+    const {date, type, length, location, notes} = workout
 
     const displayDate = {
                         year: date.slice(0, 4),
