@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react'
-import { Outlet, useOutletContext } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 import NavBar from './components/NavBar'
 
 function App() {
@@ -11,8 +11,19 @@ function App() {
     .then(data => setWorkoutList(data))
   }, [])
 
-  const displayList = workoutList.toSorted((a, b) => {
-    return a.date.replaceAll('-','') - b.date.replaceAll('-','')}
+  const displayList = [...workoutList].sort((a, b) => {
+    const date1 = a.date.replaceAll('-','')
+    const date2 = b.date.replaceAll('-','')
+
+    if (date1 > date2) {
+      return -1
+    }
+    else if (date1 < date2) {
+      return 1
+    }
+    else {
+      return 0
+    }}
   )
   
   return(
