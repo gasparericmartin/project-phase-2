@@ -39,6 +39,14 @@
       "length": "90",
       "location": "peachtree, ga",
       "notes": "Test 2"
+    },
+    {
+      "id": 6,
+      "date": "2024-03-02",
+      "type": "Run",
+      "length": "78",
+      "location": "gooby ",
+      "notes": "Test 3"
     }
   ]
 }

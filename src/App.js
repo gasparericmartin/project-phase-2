@@ -10,13 +10,17 @@ function App() {
     .then(r => r.json())
     .then(data => setWorkoutList(data))
   }, [])
+
+  const displayList = workoutList.toSorted((a, b) => {
+    return a.date.replaceAll('-','') - b.date.replaceAll('-','')}
+  )
   
   return(
     <>
       <header>
         <NavBar />
       </header>
-      <Outlet context={[workoutList, setWorkoutList]} />
+      <Outlet context={[workoutList, setWorkoutList, displayList]} />
     </>
   )
 }

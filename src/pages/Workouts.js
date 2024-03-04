@@ -6,7 +6,7 @@ import './Workouts.css'
 
 
 function Workouts() {
-  const [workoutList, setWorkoutList] = useOutletContext()
+  const [workoutList, setWorkoutList, displayList] = useOutletContext()
   const [showAddForm, setShowAddForm] = useState(false)
 
     function postWorkout(postObj) {
@@ -25,9 +25,9 @@ function Workouts() {
       setShowAddForm(!showAddForm)
     }
 
-    const displayList = workoutList.toSorted((a, b) => {
-      return a.date.replaceAll('-','') - b.date.replaceAll('-','')}
-    )
+    // const displayList = workoutList.toSorted((a, b) => {
+    //   return a.date.replaceAll('-','') - b.date.replaceAll('-','')}
+    // )
 
     
     
