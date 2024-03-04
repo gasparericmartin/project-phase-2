@@ -6,7 +6,7 @@ import './Workouts.css'
 
 
 function Workouts() {
-  const [workoutList, setWorkoutList, displayList] = useOutletContext()
+  const {workoutList, setWorkoutList, displayList} = useOutletContext()
   const [showAddForm, setShowAddForm] = useState(false)
 
     function postWorkout(postObj) {

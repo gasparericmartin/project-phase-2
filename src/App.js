@@ -12,8 +12,11 @@ function App() {
   }, [])
 
   const displayList = [...workoutList].sort((a, b) => {
-    const date1 = a.date.replaceAll('-','')
-    const date2 = b.date.replaceAll('-','')
+    const date1 = new Date(a.date.replaceAll('-',', ')).getTime()
+    const date2 = new Date(b.date.replaceAll('-',', ')).getTime()
+
+    console.log(date1)
+    console.log(date2)
 
     if (date1 > date2) {
       return -1
@@ -25,13 +28,15 @@ function App() {
       return 0
     }}
   )
+
+  console.log(displayList)
   
   return(
     <>
       <header>
         <NavBar />
       </header>
-      <Outlet context={[workoutList, setWorkoutList, displayList]} />
+      <Outlet context={{workoutList, setWorkoutList, displayList}} />
     </>
   )
 }
