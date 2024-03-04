@@ -8,10 +8,6 @@ function Home() {
         const lastWorkout = new Date(displayList[0].date.replaceAll('-', ','))
         const daysElapsed = (today - lastWorkout) / (1000 * 60 * 60 * 24)
 
-        // console.log('Today: ', today)
-        // console.log('Last Workout: ', lastWorkout)
-        // console.log(displayList)
-
         return daysElapsed
     }
 
