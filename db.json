@@ -30,7 +30,7 @@
       "type": "Run",
       "length": "5",
       "location": "atlanta, ga",
-      "notes": "Test 1"
+      "notes": "Fun trip!"
     },
     {
       "id": 5,
@@ -38,15 +38,15 @@
       "type": "Run",
       "length": "90",
       "location": "peachtree, ga",
-      "notes": "Test 2"
+      "notes": "First Georgia run"
     },
     {
       "id": 6,
       "date": "2024-03-02",
       "type": "Run",
       "length": "78",
-      "location": "gooby ",
-      "notes": "Test 3"
+      "location": "Central Park",
+      "notes": "Rainy day"
     },
     {
       "id": 7,
@@ -55,6 +55,14 @@
       "length": "20",
       "location": "Movement Gowanus",
       "notes": "High gravity day"
+    },
+    {
+      "id": 8,
+      "date": "2024-03-04",
+      "type": "Run",
+      "length": "80",
+      "location": "Prospect Park",
+      "notes": "Nighttime run"
     }
   ]
 }
