@@ -10,7 +10,7 @@ Clone this repositoiry and save it to your local environment.
 
 ### Back-end
 
-With Node.js and npm installed on your system, use JSON server to create a mock API using the db.json file in this repository. To do this, open a terminal window and navigate to the workout-logger directory, then run the command "npm run server".
+With Node.js and npm installed, use JSON server to create a mock API using the db.json file in this repository. To do this, open a terminal window and navigate to the workout-logger directory, then run the command "npm run server".
 
 ### Front-end 
 
