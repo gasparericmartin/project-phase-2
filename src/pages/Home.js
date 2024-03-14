@@ -4,9 +4,9 @@ function Home() {
     const {displayList} = useOutletContext()
 
     function daysElapsed() {
-        const today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate())
-        const lastWorkout = new Date(displayList[0].date.replaceAll('-', ','))
-        const daysElapsed = (today - lastWorkout) / (1000 * 60 * 60 * 24)
+        const today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate()).getTime()
+        const lastWorkout = new Date(displayList[0].date.replaceAll('-', ',')).getTime()
+        const daysElapsed = Math.ceil((today - lastWorkout) / (1000 * 60 * 60 * 24))
 
         return daysElapsed
     }
